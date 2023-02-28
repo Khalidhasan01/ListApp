@@ -13,23 +13,24 @@
   </mat-toolbar>
 
 
-<form>
+<form [formGroup]="form" >
 
   <mat-form-field class="form-field">
     <mat-label>Name</mat-label>
-    <input matInput type="text" placeholder="Name">
+    <input matInput type="text" placeholder="Name" [formControl]="name">
   </mat-form-field>
 
   <mat-form-field class="form-field">
     <mat-label>Type</mat-label>
-    <input matInput type="text" placeholder="Type">
+    <input matInput type="text" placeholder="Type" [formControl]="type">
   </mat-form-field>
 
   <mat-form-field class="form-field">
     <mat-label>description</mat-label>
-    <input matInput type="text" placeholder="description">
+    <input matInput type="text" placeholder="description" [formControl]="description">
   </mat-form-field>
-  <button mat-raised-button color="primary">Add</button>
+
+  <button mat-raised-button color="primary" (click)="showData()">Add</button>
 
 </form>
 <button mat-raised-button color="accent" (click)="openDialog()">Open dialog</button>

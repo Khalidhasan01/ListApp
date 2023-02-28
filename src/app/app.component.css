@@ -15,7 +15,8 @@ span{
 }
 
 .form-field{
+  display: flex;
   margin-bottom: 10px;
-  width: 400px;
+  width: 500px;
   display: block !important;
 }

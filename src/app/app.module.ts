@@ -16,6 +16,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -43,7 +46,9 @@ import {MatInputModule} from '@angular/material/input';
     MatSelectModule,
     MatSidenavModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    MatCardModule
 
   ],
   providers: [],
