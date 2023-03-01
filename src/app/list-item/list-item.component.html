@@ -8,16 +8,25 @@
     <mat-card-content>
       <p>{{item.type}}</p>
       <p>{{item.description }}</p>
+
       <mat-divider></mat-divider>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Edit</button>
-      <button mat-button>Delete</button>
+      <button mat-button (click)="editItem()">Edit</button>
+      <button mat-button (click)="deleteItem()">Delete</button>
     </mat-card-actions>
 
   </mat-card>
 
 </div>
+<mat-paginator [length]="this.listService.list.length"
+              [pageSize]="3"
+              [pageSizeOptions]="[3, 5]"
+              aria-label="Select page"
+              (page)="onPageChange($event)">
+
+</mat-paginator>
+
 
 
 <!-- <h2 mat-dialog-title>Install Angular</h2>

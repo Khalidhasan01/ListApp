@@ -18,6 +18,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { ItemFormComponent } from './item-form/item-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
+
 
 
 
@@ -30,7 +37,10 @@ import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
-    ListItemComponent
+    ListItemComponent,
+    TodoListComponent,
+    ItemFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +58,9 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule,
+    MatPaginatorModule
 
   ],
   providers: [],

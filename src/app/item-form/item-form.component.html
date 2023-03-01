@@ -1,0 +1,30 @@
+<div class="form">
+  <form [formGroup]="form" >
+
+    <mat-form-field class="form-field">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" placeholder="Name" [formControl]="name">
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Type</mat-label>
+      <input matInput type="text" placeholder="Type" [formControl]="type">
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>description</mat-label>
+      <input matInput type="text" placeholder="description" [formControl]="description">
+    </mat-form-field>
+
+    <section class="example-section">
+      <h4>Select your toppings:</h4>
+      <p><mat-checkbox [formControl]="active">Active</mat-checkbox></p>
+      <p><mat-checkbox [formControl]="complete">Complete</mat-checkbox></p>
+      <p><mat-checkbox [formControl]="fail">Fail</mat-checkbox></p>
+    </section>
+
+    <button mat-raised-button color="primary" (click)="showData()">Add</button>
+
+  </form>
+  <button mat-raised-button color="accent" (click)="openDialog()">Open dialog</button>
+</div>
