@@ -25,7 +25,7 @@ export class TodoListComponent implements OnInit {
   }
 
   deleteItem(){
-
+    this.listService.removeItem()
   }
 
 }

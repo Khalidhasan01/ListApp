@@ -23,6 +23,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ItemFormComponent } from './item-form/item-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UpdateItemComponent } from './update-item/update-item.component';
 
 
 
@@ -40,7 +41,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ListItemComponent,
     TodoListComponent,
     ItemFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    UpdateItemComponent
   ],
   imports: [
     BrowserModule,
